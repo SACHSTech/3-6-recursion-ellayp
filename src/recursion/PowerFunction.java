@@ -21,6 +21,7 @@ public class PowerFunction {
             return (1 / power(base, -exponent));
         }
     }
+    
     /**
      * This main method tests the PowerFunction method with various inputs.
      * @param args command line arguments
