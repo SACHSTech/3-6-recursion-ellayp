@@ -1,15 +1,7 @@
 package recursion;
 
 public class ReverseAString {
-    public static void main(String[] args) {
-        reverse(""); // Output:
-        System.out.println();
-        reverse("racecar"); // Output: racecar
-        System.out.println();
-        reverse("hello"); // Output: olleh
-    }
-
-    public static void reverse(String s) {
+        public static void reverse(String s) {
         if (s.isEmpty()) {
             return;
         } else {
@@ -17,5 +9,11 @@ public class ReverseAString {
             reverse(s.substring(0, s.length() - 1));
         }
     }
-    
+    public static void main(String[] args) {
+        reverse(""); // Output:
+        System.out.println();
+        reverse("racecar"); // Output: racecar
+        System.out.println();
+        reverse("hello"); // Output: olleh
+    }
 }

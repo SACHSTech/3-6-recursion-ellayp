@@ -16,7 +16,7 @@ public class CheckIfAStringIsAPalindrome {
 
     public static void main(String[] args) {
         System.out.println(isPalindrome("")); // Output: true
-                System.out.println(isPalindrome("a")); // Output: true
+        System.out.println(isPalindrome("a")); // Output: true
         System.out.println(isPalindrome("racecar")); // Output: true
         System.out.println(isPalindrome("hello")); // Output: false
     }
