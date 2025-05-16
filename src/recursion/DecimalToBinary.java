@@ -17,7 +17,7 @@ public class DecimalToBinary {
         if (n == 1) {
             return "1";
         }
-        
+
         return toBinary(n / 2) + (n % 2);
     }
 
@@ -26,7 +26,7 @@ public class DecimalToBinary {
      * @param args command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(toBinary(0)); // Output: ""
+        System.out.println(toBinary(0)); // Output: "0"
         System.out.println(toBinary(10)); // Output: "1010"
     }
 }

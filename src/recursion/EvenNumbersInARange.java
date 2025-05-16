@@ -2,6 +2,7 @@ package recursion;
 
 /**
  * This recursive program returns all even numbers between start and end (inclusive).
+ * @author E. Yap
  */
 public class EvenNumbersInARange {
     /**
@@ -21,7 +22,7 @@ public class EvenNumbersInARange {
             printEvens(start + 1, end);
         }
     }
-    
+
     /**
      * This main method tests the EvenNumbersInARange method with various inputs.
      * @param args command line arguments
