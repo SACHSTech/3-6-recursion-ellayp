@@ -26,6 +26,7 @@ public class CountDownTimer {
      */
     public static void main(String[] args) {
         countDown(0); // Output:
+        System.out.println();
         countDown(5); // Output: 5 4 3 2 1
     }
 }

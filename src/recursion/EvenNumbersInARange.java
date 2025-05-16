@@ -10,16 +10,15 @@ public class EvenNumbersInARange {
      * @param end the ending integer of the range
      */
     public static void printEvens(int start, int end) {
-        for (int i = start; i <= end; i++) {
-            if (start == 0 && end == 0) {
-                System.out.print(0);
-            }
-            else if (i % 2 == 0) {
-                System.out.print(i + " ");
-            }
-            else {
-                start += 1;
-            }
+        if (start > end) {
+            return;
+        }
+        else if (start % 2 == 0) {
+            System.out.print(start + " ");
+            printEvens(start + 1, end);
+        }
+        else {
+            printEvens(start + 1, end);
         }
     }
     /**
@@ -28,6 +27,10 @@ public class EvenNumbersInARange {
      */
     public static void main(String[] args) {
         printEvens(0, 0); // Output: 0
+        System.out.println();
+        printEvens(1, 1); // Output:
+        System.out.println();
+        printEvens(2, 1); // Output:
         System.out.println();
         printEvens(0, 10); // Output: 0 2 4 6 8 10
         System.out.println();
